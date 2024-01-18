@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CmdSessionClass</class>
+ <widget class="QMainWindow" name="CmdSessionClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>989</width>
+    <height>773</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CmdSession</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QTextEdit" name="display_cmd_edt">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTextEdit
+{
+	color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 25);
+	font: 10pt &quot;Fixedsys&quot;;
+	border: 0px;
+}
+
+QScrollBar:vertical
+{
+       border: none;
+       background: transparent;
+       width: 6px;
+}
+ 
+QScrollBar::handle:vertical
+{
+       background-color: rgba(255,255,255,64);
+       min-height: 30px;
+	  border-radius:3px;
+	  width: 6px;
+   }
+ 
+QScrollBar::add-line:vertical
+{
+       border: none;
+       height: 0px;
+ }
+ 
+ QScrollBar::sub-line:vertical
+{
+       border: none;
+       height: 0px;
+}
+ 
+ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical
+ {	
+	background:transparent;
+    border-radius:3px;
+}</string>
+        </property>
+        <property name="readOnly">
+         <bool>false</bool>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Fixedsys'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="cursorWidth">
+         <number>1</number>
+        </property>
+        <property name="textInteractionFlags">
+         <set>Qt::TextEditorInteraction</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLineEdit" name="input_cmd_edt">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit
+{
+	color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 25);
+	font: 10pt &quot;Fixedsys&quot;;
+	border: 0px;
+}
+
+QScrollBar:vertical
+{
+       border: none;
+       background: transparent;
+       width: 6px;
+}
+ 
+QScrollBar::handle:vertical
+{
+       background-color: rgba(255,255,255,64);
+       min-height: 30px;
+	  border-radius:3px;
+	  width: 6px;
+   }
+ 
+QScrollBar::add-line:vertical
+{
+       border: none;
+       height: 0px;
+ }
+ 
+ QScrollBar::sub-line:vertical
+{
+       border: none;
+       height: 0px;
+}
+ 
+ QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical
+ {	
+	background:transparent;
+    border-radius:3px;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="run_btn">
+          <property name="maximumSize">
+           <size>
+            <width>50</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	padding-left: 5px;
+	padding-right: 5px;
+    border: 0px solid #99ffffff;
+	border-radius: 2px;
+	background-color: #55ffffff;
+	color: #ffffff;
+	font: 12pt &quot;黑体&quot;;
+}
+QPushButton:hover{
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #aaffffff;
+	color: #ffffff;
+	font: 12pt &quot;黑体&quot;;
+}
+QPushButton:pressed{
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #ccffffff;
+	color: #ffffff;
+	font: 12pt &quot;黑体&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="res.qrc">
+            <normaloff>:/MainWindow/res/run.png</normaloff>:/MainWindow/res/run.png</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
