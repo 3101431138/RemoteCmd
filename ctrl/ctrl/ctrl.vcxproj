@@ -112,6 +112,7 @@
     <ClCompile Include="qtutil.cpp" />
     <ClCompile Include="select_server.cpp" />
     <ClCompile Include="shell.cpp" />
+    <ClCompile Include="titlecontroller.cpp" />
     <QtRcc Include="res.qrc" />
     <QtUic Include="cmdsession.ui" />
     <QtUic Include="mainwindow.ui" />
@@ -120,10 +121,18 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="titlecontroller.h" />
     <QtMoc Include="cmdsession.h" />
     <ClInclude Include="qtutil.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="select_server.h" />
     <ClInclude Include="shell.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\ctrl.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ctrl.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

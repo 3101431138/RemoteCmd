@@ -10,7 +10,7 @@ public:
 	static void RemoveFrame(QWidget& qWidget)
 	{
 		//阴影				   没有边框                   小部件      至于顶层
-		qWidget.setWindowFlags(Qt::FramelessWindowHint | Qt::Tool /*| Qt::WindowStaysOnTopHint*/);
+		qWidget.setWindowFlags(Qt::FramelessWindowHint/* | Qt::Tool | Qt::WindowStaysOnTopHint*/);
 	}
 	static void SetTransparent(QWidget& qWidget)
 	{

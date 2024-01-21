@@ -19,16 +19,16 @@
    </property>
    <layout class="QGridLayout" name="gridLayout_3">
     <property name="leftMargin">
-     <number>10</number>
+     <number>5</number>
     </property>
     <property name="topMargin">
-     <number>10</number>
+     <number>5</number>
     </property>
     <property name="rightMargin">
-     <number>10</number>
+     <number>5</number>
     </property>
     <property name="bottomMargin">
-     <number>10</number>
+     <number>5</number>
     </property>
     <property name="spacing">
      <number>0</number>
@@ -89,22 +89,40 @@ border-radius: 1px;
            <number>0</number>
           </property>
           <item>
-           <widget class="QLabel" name="lbIcon">
-            <property name="minimumSize">
-             <size>
-              <width>20</width>
-              <height>20</height>
-             </size>
-            </property>
+           <widget class="QPushButton" name="icon_btn">
             <property name="styleSheet">
-             <string notr="true">image: url(:/MainWindow/res/cmd.png);
-margin-left: 5px;</string>
+             <string notr="true">QPushButton
+{
+font: 10pt &quot;黑体&quot;;
+color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 00);
+border: 0px solid #ffffff;
+border-radius: 2px;
+margin-left: 5px;
+}
+QPushButton:hover
+{
+font: 10pt &quot;黑体&quot;;
+color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 32);
+}
+QPushButton:pressed
+{
+font: 10pt &quot;黑体&quot;;
+color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 16);
+}
+</string>
             </property>
             <property name="text">
-             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             <string/>
             </property>
-            <property name="alignment">
-             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            <property name="icon">
+             <iconset resource="res.qrc">
+              <normaloff>:/MainWindow/res/cmd.png</normaloff>:/MainWindow/res/cmd.png</iconset>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
@@ -119,7 +137,7 @@ margin-left: 5px;</string>
             <property name="styleSheet">
              <string notr="true">font: 11pt &quot;Cascadia Code&quot;;
 color: rgb(255, 255, 255);
-margin-left: 5px;</string>
+margin-left: 3px;</string>
             </property>
             <property name="text">
              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;remote-cmd&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -192,22 +210,153 @@ border: 0px solid #ffffff;
 border-radius: 1px;
 }</string>
          </property>
-         <layout class="QVBoxLayout" name="verticalLayout" stretch="0">
-          <item>
-           <widget class="QTabWidget" name="tabWidget">
-            <property name="styleSheet">
-             <string notr="true">QTabWidget::pane 
+         <layout class="QGridLayout" name="gridLayout">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,1">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QWidget" name="sideBar" native="true">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100000</width>
+                <height>100000</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(255, 255, 255, 128);</string>
+              </property>
+              <widget class="QLabel" name="lbTitle_2">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>15</y>
+                 <width>176</width>
+                 <height>51</height>
+                </rect>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 11pt &quot;Cascadia Code&quot;;
+color: rgb(255, 255, 255);
+margin-left: 3px;</string>
+               </property>
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;https://github.com/3101431138/RemoteCmd&quot;&gt;&lt;span style=&quot; font-size:22pt; text-decoration: underline; color:#f0f0f0;&quot;&gt;remote-cmd&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+               </property>
+               <property name="openExternalLinks">
+                <bool>true</bool>
+               </property>
+              </widget>
+              <widget class="QLabel" name="lbTitle_3">
+               <property name="geometry">
+                <rect>
+                 <x>45</x>
+                 <y>190</y>
+                 <width>141</width>
+                 <height>20</height>
+                </rect>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 11pt &quot;Cascadia Code&quot;;
+color: rgb(255, 255, 255);
+margin-left: 3px;</string>
+               </property>
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:7pt; font-style:italic;&quot;&gt;--by huainian (2024/01/21)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+              <widget class="QLabel" name="lbTitle_4">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>78</y>
+                 <width>176</width>
+                 <height>101</height>
+                </rect>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 11pt &quot;Cascadia Code&quot;;
+color: rgb(255, 255, 255);
+margin-left: 3px;</string>
+               </property>
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;A simple tool for remotely executing commands within a local area network, welcome for learning and communication purposes.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="textFormat">
+                <enum>Qt::AutoText</enum>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+               </property>
+               <property name="wordWrap">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTabWidget" name="tabWidget">
+              <property name="styleSheet">
+               <string notr="true">QTabWidget::pane 
 {
 background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.25
  rgb(3,65,88, 240), stop:1 rgb(3,65,88, 240));
 border: 0px solid #ffffff;
 border-radius: 1px;
 }</string>
-            </property>
-            <property name="currentIndex">
-             <number>-1</number>
-            </property>
-           </widget>
+              </property>
+              <property name="currentIndex">
+               <number>-1</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
           </item>
          </layout>
         </widget>
@@ -221,7 +370,7 @@ border-radius: 1px;
  <layoutdefault spacing="6" margin="11"/>
  <resources>
   <include location="res.qrc"/>
-  <include location="../../../cpp-old/Titan/DataAnly/DataAnly.qrc"/>
+  <include location="res.qrc"/>
  </resources>
  <connections/>
 </ui>

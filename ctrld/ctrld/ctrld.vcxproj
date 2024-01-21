@@ -148,8 +148,15 @@
   <ItemGroup>
     <ClInclude Include="cmder.h" />
     <ClInclude Include="console_color_log.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="select_client.h" />
     <ClInclude Include="shell.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ctrld.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\ctrld.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
